@@ -1,0 +1,116 @@
+---
+title: Homework 11 - mobile app interactivity
+---
+
+* [LINK to GITHUB](https://github.com/cmsc-vcu/cmsc427-sp2025-hw11-AlekayPrograms)
+
+* [LINK to FIGMA](https://www.figma.com/board/1ZPKugOH79G67V9fVxGRkA/Habit-Buddy?node-id=0-1)
+
+* [LINK to Snack Editor](https://snack.expo.dev/@alekay/habit-buddy)
+
+# Overview of Habit Buddy
+
+Habit Buddy is a motivational mobile app designed to help users build positive habits through tracking, challenges, and progress visualization. Homework 11 brings interactivity by integrating real-time data updates via React Native hooks, persistent state with global context, and an API fetch using useEffect.
+
+# Key features
+
+- 🔄 Interactive habit buttons using useState
+- 📅 Weekly tracker with day toggles
+- 🎯 Daily challenge progress entry using modal and input
+- 🌙 Theme switching using useContext
+- 🧠 State shared globally via context and passed through props
+- 🌐 Motivational quote pulled via fetch and useEffect from API Ninjas
+- 📱 All features managed within a fully navigable multi-tab layout
+
+# Individual Screen details
+
+## Home Screen
+This screen serves as the main dashboard. Users can log completed habits, toggle days in the weekly tracker, and view a motivational quote pulled from an API.
+
+### wireframe design
+![](./assets/home-wireframe.png){height=400 fig-align="center"}
+
+### As-built screenshot
+![](./assets/home-screenshot.png){height=400 fig-align="center"}
+
+**Interactivity:**
+- useState manages completed habits and weekly toggles
+- useContext provides access to global log function and theme
+- useEffect fetches a motivational quote on load from API Ninjas
+
+## Challenges Screen
+Allows users to track specific personal challenges and manually update progress. Reaching the goal marks the challenge complete with a ✅.
+
+### wireframe design
+![](./assets/challenges-wireframe.png){height=400 fig-align="center"}
+
+### As-built screenshot
+![](./assets/challenges-screenshot.png){height=400 fig-align="center"}
+
+**Interactivity:**
+- useState for storing and updating challenge progress
+- Modal used to handle numeric input
+- Logic to detect goal completion and apply a checkmark
+
+## Streaks Screen
+Displays a streak count and a weekly history using emojis.
+
+### wireframe design
+![](./assets/streaks-wireframe.png){height=400 fig-align="center"}
+
+### As-built screenshot
+![](./assets/streaks-screenshot.png){height=400 fig-align="center"}
+
+**Interactivity:**
+- Static display of streak count and habit history
+- Future improvement could track streaks using dynamic state
+
+## Settings Screen
+Lets users toggle dark mode and access settings screens (e.g. notifications, privacy, password reset).
+
+### wireframe design
+![](./assets/settings-wireframe.png){height=400 fig-align="center"}
+
+### As-built screenshot
+![](./assets/settings-screenshot.png){height=400 fig-align="center"}
+
+**Interactivity:**
+- useContext to manage and apply theme toggle globally
+- Navigation to placeholder screens for future configuration pages
+
+# Snack code for the application
+
+```{=html}
+<div 
+data-snack-id="@alekay/habit-buddy"
+data-snack-platform="web"
+data-snack-preview="true" 
+data-snack-theme="light" 
+style="overflow:hidden;background:#fbfcfd;border:3px solid var(--color-border);border-radius:4px;height:500px;width:100%">
+</div>
+<script async src="https://snack.expo.dev/embed.js"></script>
+```
+
+# Reflection
+
+Discuss your experience coding hooks in this assignment. Which hooks were hardest? Which easiest? What helped you figure them out?
+: useState was straightforward since I used it before, but useEffect was tricky with the async fetch at first. I had to look up how to safely call fetch in useEffect. useContext was a little confusing initially but worked great for theme toggling.
+
+How much time did you spend on this specific assignment (homework 11 - interactivity)?
+: Around 8–10 hours including refactoring HW10, testing new features in Snack, and writing up the report.
+
+What was the easiest part of this specific assignment (hw11)?
+: Reusing the HW10 structure and improving it incrementally. Setting up navigation and styling again was smooth.
+
+What is the hardest part of this specific assignment (hw11)?
+: Making state flow between components and getting the API call to not re-fire unnecessarily. Also learning the difference between local vs global state.
+
+Discuss your overall experience using Snack and developing this mobile app.
+: Snack is really helpful and accessible, but it does get buggy with navigation dependencies. It helped me visualize things fast. Developing the mobile app in small increments helped me not get overwhelmed.
+
+# README
+
+::: {style="background:lightgray; margin-left:20px; border-top: 3px solid black; border-bottom: 3px solid black; padding-left:20px; padding-right:20px"}
+{{< include ../README.md >}}
+:::
+

@@ -1,0 +1,12 @@
+
+author:
+  - name: Alex Nguyen
+    email: nguyena57@vcu.edu
+
+date: last-modified
+
+
+format:
+  html:
+    embed-resources: true
+    theme: cosmo
