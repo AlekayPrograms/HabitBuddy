@@ -91,22 +91,6 @@ style="overflow:hidden;background:#fbfcfd;border:3px solid var(--color-border);b
 <script async src="https://snack.expo.dev/embed.js"></script>
 ```
 
-# Reflection
-
-Discuss your experience coding hooks in this assignment. Which hooks were hardest? Which easiest? What helped you figure them out?
-: useState was straightforward since I used it before, but useEffect was tricky with the async fetch at first. I had to look up how to safely call fetch in useEffect. useContext was a little confusing initially but worked great for theme toggling.
-
-How much time did you spend on this specific assignment (homework 11 - interactivity)?
-: Around 8–10 hours including refactoring HW10, testing new features in Snack, and writing up the report.
-
-What was the easiest part of this specific assignment (hw11)?
-: Reusing the HW10 structure and improving it incrementally. Setting up navigation and styling again was smooth.
-
-What is the hardest part of this specific assignment (hw11)?
-: Making state flow between components and getting the API call to not re-fire unnecessarily. Also learning the difference between local vs global state.
-
-Discuss your overall experience using Snack and developing this mobile app.
-: Snack is really helpful and accessible, but it does get buggy with navigation dependencies. It helped me visualize things fast. Developing the mobile app in small increments helped me not get overwhelmed.
 
 # README
 
