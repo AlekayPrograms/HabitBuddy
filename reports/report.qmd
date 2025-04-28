@@ -1,5 +1,5 @@
 ---
-HABIT BUDDY APP
+title: HABIT BUDDY APP
 ---
 
 * [LINK to GITHUB]https://github.com/AlekayPrograms/HabitBuddy)
