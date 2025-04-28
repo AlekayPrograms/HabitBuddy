@@ -1,8 +1,8 @@
 ---
-title: Homework 11 - mobile app interactivity
+HABIT BUDDY APP
 ---
 
-* [LINK to GITHUB](https://github.com/cmsc-vcu/cmsc427-sp2025-hw11-AlekayPrograms)
+* [LINK to GITHUB]https://github.com/AlekayPrograms/HabitBuddy)
 
 * [LINK to FIGMA](https://www.figma.com/board/1ZPKugOH79G67V9fVxGRkA/Habit-Buddy?node-id=0-1)
 
@@ -10,7 +10,7 @@ title: Homework 11 - mobile app interactivity
 
 # Overview of Habit Buddy
 
-Habit Buddy is a motivational mobile app designed to help users build positive habits through tracking, challenges, and progress visualization. Homework 11 brings interactivity by integrating real-time data updates via React Native hooks, persistent state with global context, and an API fetch using useEffect.
+Habit Buddy is a motivational mobile app designed to help users build positive habits through tracking, challenges, and progress visualization. It brings interactivity by integrating real-time data updates via React Native hooks, persistent state with global context, and an API fetch using useEffect.
 
 # Key features
 
